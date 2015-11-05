@@ -1,0 +1,227 @@
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Microsoft Yahei','Lato', Calibri, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.section{
+	text-align: center;
+	padding: 50px;
+}
+
+
+h1 {
+	font-size: 3.5em;
+	margin: 0 0 0.5em 0;
+}
+h2 {
+	font-size: 2em;
+	margin: 0 0 0.2em 0;
+}
+h3 {
+	font-size: 1.5em;
+	margin: 0 0 0.1em 0;
+}
+h4 {
+	font-size: 1.25em;
+	margin: 0 0 0.1em 0;
+}
+p {
+	font-size: 1.1em;
+	margin: 0.5em 0;
+}
+h1+h2,h1+p {
+	margin-top: -0.5em;
+}
+a {
+	color: #F05E1C;
+	text-decoration: none;
+	transition: 0.5s;
+}
+a:hover {
+	color: #FFC408;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+/*-------------lang-panel-------------------*/
+#lang-panel {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	border-radius: 5px;
+	z-index: 100;
+	font-size: 0.8em;
+	text-shadow: 2px 2px 5px rgba(28,28,28,0.5);
+}
+
+#lang-panel .lang {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 2px 8px;
+}
+
+#lang-panel .lang.selected {
+	background-color: #B19693;
+	cursor: default;
+}
+
+/*------------------fonts-----------------*/
+
+@font-face {
+	font-family: 'MFQingShu_Noncommercial-Regular';
+	src: url('./fonts/MFQingShu_Noncommercial-Regular.otf');
+}
+@font-face {
+	font-family: 'MFLangQian_Noncommercial-Regular';
+	src: url('./fonts/MFLangQian_Noncommercial-Regular.otf');
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section1{
+	color: #add6ce;
+	text-shadow: 2px 2px 5px rgba(28,28,28,0.5);
+}
+#section1 h1{
+	font-family: 'MFQingShu_Noncommercial-Regular','Microsoft Yahei','Lato', Calibri, Arial, sans-serif;
+}
+#avatar {
+	width: 256px;
+	height: 256px;
+	border: 10px solid #add6ce;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(28,28,28,0.5);
+}
+#title {
+	margin: 0.5em 0 0 0;
+	color: #add6ce;
+}
+#subtitle {
+	margin: 1em 0 0.25em 0;
+	color: #add6ce;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section2{
+	color: #ebd38e;
+	text-shadow: 2px 2px 5px rgba(28,28,28,0.5);
+}
+#section2 h1{
+	font-family: 'MFLangQian_Noncommercial-Regular','Microsoft Yahei','Lato', Calibri, Arial, sans-serif;
+}
+
+/* Section 3
+ * --------------------------------------- */
+#section3 {
+	color: #f2c4c5;
+	text-shadow: 2px 2px 5px rgba(28,28,28,0.5);
+}
+#section3 h1{
+	font-family: 'MFQingShu_Noncommercial-Regular','Microsoft Yahei','Lato', Calibri, Arial, sans-serif;
+}
+
+.row {
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.clearboth {
+	clear: both;
+}
+.row:after {
+	clear: both;
+}
+
+.col-2 {
+	width: 16.66667%;
+	float: left;
+}
+
+.col-4 {
+	width: 33.33333%;
+	float: left;
+}
+
+.circle-img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #808F7C;
+	padding: 18px;
+}
+
+.circle-img:hover {
+	opacity: 0.6;
+}
+
+.left-sec3 {
+	text-align: left;
+}
+span {
+	color:#434343;
+}
+
+
+/* Section 4
+ * --------------------------------------- */
+#section4 {
+	color: #d1bba0;
+	text-shadow: 2px 2px 5px rgba(28,28,28,0.5);
+}
+#section4 h2:nth-child(1){
+	color:#CB4042;
+}
+#section4 h2{
+	font-family: 'MFQingShu_Noncommercial-Regular','Microsoft Yahei','Lato', Calibri, Arial, sans-serif;
+}
+
+/*----Section 5----------------------------------------*/
+
+#myVideo{
+	position: absolute;
+	z-index: 4;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black; /* in case the video doesn't fit the whole page*/
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+}
+
+                       /* Layer with position absolute in order to have it over the video
+                                       * --------------------------------------- */
+#section5 .layer{
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	left: 0;
+	top: 43%;
+	height: 100%;
+	font-family: 'MFQingShu_Noncommercial-Regular','Microsoft Yahei','Lato', Calibri, Arial, sans-serif;
+	color: #282828;
+	text-shadow: 2px 2px 5px rgba(189,192,186,0.5);
+}
+

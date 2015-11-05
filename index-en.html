@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ah Goo's CV</title>
+    <meta name="author" content="Ah Goo" />
+    <meta name="description" content="Resume by Ah Goo" />
+    <meta name="keywords"  content="Ah Goo,CV,front-end,阿古" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="shortcut icon" href="imgs/ahgoo.ico" />
+    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+</head>
+<body>
+
+<div id="pagepiling">
+
+    <div id="lang-panel">
+        <a class="lang" href="index.html">中</a>
+        <a class="lang selected" href="#">En</a>
+    </div>
+
+    <div class="section" id="section1">
+        <img id="avatar" src="imgs/avatar.jpg" title="Ah Goo"/>
+        <h1 id="title">Ah Goo</h1>
+        <p id="subtitle">A Passionate, Creative, and Devoted</p>
+        <h4>Web Front-End Designer & Developer</h4>
+        <p><a href="mailto:goo.musician@gmail.com">goo.musician@gmail.com</a><br>
+            Tel:(+86)130-3041-1648
+        </p>
+    </div>
+
+    <div class="section" id="section2">
+        <h1>Education</h1>
+        <p>Undergraduate student at Dalian Nationalities University</p>
+        <h3>Optoelectronic Technology and Science</h3>
+        <h1>Experience</h1>
+        <p>Working in a company which builds equipment for subway with Embeded Technology for 2 years<br>
+            to be the Test Department Minister
+        </p>
+    </div>
+
+    <div class="section" id="section3">
+        <div>
+            <h1>some Learned Works</h1>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <a class="circle-img" href="works/clock&cube/clock&cube.html" target="_blank">
+                        <img src="./imgs/css3.png" alt="css3">
+                    </a>
+                </div>
+                <div class="col-4 left-sec3">
+                    <h2><a href="works/clock&cube/clock&cube.html" target="_blank">Clock & Cube</a></h2>
+                    <p>Clock and 3D Rotate Cube with <span><b>CSS3</b></span></p>
+                </div>
+
+                <div class="col-2">
+                    <a class="circle-img" href="works/Sliding%20Image%20Panels/Slide1.html" target="_blank">
+                        <img src="./imgs/css3.png" alt="css3">
+                    </a>
+                </div>
+                <div class="col-4 left-sec3">
+                    <h2><a href="works/Sliding%20Image%20Panels/Slide1.html" target="_blank">Sliding Image Panels</a></h2>
+                    <p>Sliding Image Panels with <span><b>CSS3</b></span></p>
+                </div>
+
+                <div class="clearboth"></div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <a class="circle-img" href="works/waterfall/waterfall.html" target="_blank">
+                        <img src="./imgs/jQuery.png" alt="jQuery">
+                    </a>
+                </div>
+                <div class="col-4 left-sec3">
+                    <h2><a href="works/waterfall/waterfall.html" target="_blank">Waterfall</a></h2>
+                    <p>Images Waterfall with <span><b>jQuery</b></span></p>
+                </div>
+
+                <div class="col-2">
+                    <a class="circle-img" href="works/2048/2048.html" target="_blank">
+                        <img src="./imgs/jQuery.png" alt="jQuery">
+                    </a>
+                </div>
+                <div class="col-4 left-sec3">
+                    <h2><a href="works/2048/2048.html" target="_blank">2048</a></h2>
+                    <p>special 2048 with <span><b>jQuery</b></span></p>
+                </div>
+
+                <div class="clearboth"></div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-2">
+                    <a class="circle-img" href="works/magnifier/magnifier.html" target="_blank">
+                        <img src="./imgs/html5.png" alt="html5">
+                    </a>
+                </div>
+                <div class="col-4 left-sec3">
+                    <h2><a href="works/magnifier/magnifier.html" target="_blank">Magnifier</a></h2>
+                    <p>Image Magnifier and put Watermark with <span><b>Canvas</b></span></p>
+                </div>
+
+                <div class="col-2">
+                    <a class="circle-img" href="works/filters/filters.html" target="_blank">
+                        <img src="./imgs/html5.png" alt="html5">
+                    </a>
+                </div>
+                <div class="col-4 left-sec3">
+                    <h2><a href="works/filters/filters.html" target="_blank">Filters</a></h2>
+                    <p>Mutiple Image Filters with <span><b>Canvas</b></span></p>
+                </div>
+
+                <div class="clearboth"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="section" id="section4">
+        <h2>All Colors Canvas</h2>
+        <canvas id="canvas-sec4" style="display:block;margin:0 auto;">
+            not supported, pls update your browser
+        </canvas>
+
+        <script>
+            var canvas = document.getElementById("canvas-sec4");
+            var context = canvas.getContext("2d");
+
+            window.onload = function(){
+
+                var documentWidth = $(window).width();
+                var picWidth = 0.92 * documentWidth;
+
+                if( documentWidth > 500 ){
+                    picWidth = 500;
+
+                }
+
+                canvas.height = canvas.width = picWidth;
+
+
+                var imageData = context.createImageData( canvas.width , canvas.height );
+                var pixelData = imageData.data;
+
+                for( var i = 0 ; i < canvas.height ; i ++ )
+                    for( var j = 0 ; j < canvas.width ; j ++ ){
+
+                        var p = i*canvas.width+j;
+
+                        pixelData[4*p] = parseInt(Math.pow(Math.cos(Math.atan2(j-canvas.width/2,i-canvas.width/2)/2),2)*255);
+                        pixelData[4*p+1] = parseInt(Math.pow(Math.cos(Math.atan2(j-canvas.width/2,i-canvas.width/2)/2-2*Math.acos(-1)/3),2)*255);
+                        pixelData[4*p+2] = parseInt(Math.pow(Math.cos(Math.atan2(j-canvas.width/2,i-canvas.width/2)/2+2*Math.acos(-1)/3),2)*255);
+                        pixelData[4*p+3] = 255;
+                    }
+
+                context.putImageData( imageData , 0 , 0 , 0 , 0 , canvas.width , canvas.height );
+            }
+        </script>
+
+        <h2>Jobs Preferred</h2>
+        <h3>As a Web Front-End Developer</h3>
+        <h4><a href="mailto:goo.musician@gmail.com" target="_blank">take me away</a></h4>
+    </div>
+
+
+    <div class="section" id="section5">
+        <video autoplay loop muted id="myVideo">
+            <source src="imgs/flowers.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+            <h1>Done is better than Perfect</h1>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="jquery.pagepiling.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         * Plugin intialization
+         */
+        $('#pagepiling').pagepiling({
+
+            sectionsColor: ['#8d7b6e', '#ad5155', '#9ea484', '#807897','#373C38'],
+            navigation: {
+                'textColor': '#000',
+                'bulletsColor': '#000',
+                'position': 'left',
+                'tooltips': ['Home', 'Experience', 'Works', 'Jobs Preferred','Video']
+            },
+            loopBottom: true,
+            loopTop: true,
+            afterRender: function(){
+                //playing the video
+                $('video').get(0).play();
+            }
+
+        });
+
+    });
+</script>
+</body>
+</html>

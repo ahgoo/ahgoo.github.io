@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+     <meta name="keywords" content="小古，小古升职计，2048">
+    <meta name="description" content="2048，小古升职计">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../imgs/ahgoo.ico" />
+    <meta name="author" content="昆比勒,http://ahgoo.github.io">
+
+    <title>小古升职计</title>
+    <link rel="stylesheet" type="text/css" href="2048.css" />
+
+    <script type="text/javascript" src="../../jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="support2048.js"></script>
+    <script type="text/javascript" src="showanimation2048.js"></script>
+    <script type="text/javascript" src="main2048.js"></script>
+</head>
+<body>
+    <header>
+          <div id="left">
+            <img src="1.jpg" title="nice" alt="nice" width="100%" />
+        </div>
+        <div id="right">
+            <h1>小古升职计</h1>
+            <a href="javascript:newgame();" id="newgamebutton">New Game</a>
+            <p>score : <span id="score">0</span></p>
+        </div>
+    </header>
+
+    <div id="grid-container"  ontouchmove="event.preventDefault()">
+        <div class="grid-cell" id="grid-cell-0-0"></div>
+        <div class="grid-cell" id="grid-cell-0-1"></div>
+        <div class="grid-cell" id="grid-cell-0-2"></div>
+        <div class="grid-cell" id="grid-cell-0-3"></div>
+
+        <div class="grid-cell" id="grid-cell-1-0"></div>
+        <div class="grid-cell" id="grid-cell-1-1"></div>
+        <div class="grid-cell" id="grid-cell-1-2"></div>
+        <div class="grid-cell" id="grid-cell-1-3"></div>
+
+        <div class="grid-cell" id="grid-cell-2-0"></div>
+        <div class="grid-cell" id="grid-cell-2-1"></div>
+        <div class="grid-cell" id="grid-cell-2-2"></div>
+        <div class="grid-cell" id="grid-cell-2-3"></div>
+
+        <div class="grid-cell" id="grid-cell-3-0"></div>
+        <div class="grid-cell" id="grid-cell-3-1"></div>
+        <div class="grid-cell" id="grid-cell-3-2"></div>
+        <div class="grid-cell" id="grid-cell-3-3"></div>
+    </div>
+
+
+</body>
+</html>
